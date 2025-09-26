@@ -4,7 +4,7 @@ from smbus2 import SMBus
 
 # ---------------- I2C Setup ----------------
 I2C_ADDR = 0x08     # Replace with your Arduino I2C address
-bus = smbus.SMBus(1)  # 1 = /dev/i2c-1 on Raspberry Pi
+bus = SMBus(1)  # 1 = /dev/i2c-1 on Raspberry Pi
 
 def send_angle(angle):
     """Send steering angle as int via I2C"""
