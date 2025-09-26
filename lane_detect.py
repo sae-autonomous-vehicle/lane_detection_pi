@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import smbus
+from smbus2 import SMBus
 
 # ---------------- I2C Setup ----------------
 I2C_ADDR = 0x08     # Replace with your Arduino I2C address
